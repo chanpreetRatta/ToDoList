@@ -3,6 +3,7 @@ export let form;
 form = (() => {
   let form = document.createElement("form");
   form.classList.add("input-form");
+  form.id += "input-form";
 
   let input = document.createElement("input");
   let button = document.createElement("button");
