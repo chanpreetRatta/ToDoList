@@ -1,13 +1,13 @@
 import "normalize.css";
 import "./style.css";
-import { navBar } from "./components/navBar";
-import { main } from "./components/main";
-import { footer } from "./components/footer";
+import { navBar } from "./sections/navBar";
+import { main } from "./sections/main";
+import { footer } from "./sections/footer";
 
 let container = document.createElement("div");
 container.classList.add("container");
 document.body.appendChild(container);
 
 container.appendChild(navBar);
-container.appendChild(main);
+container.appendChild(main.main);
 container.appendChild(footer);

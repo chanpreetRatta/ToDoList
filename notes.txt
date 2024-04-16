@@ -1,0 +1,10 @@
+Get Data from form is added in the main module. 
+    It will just get the entered data and console it for now. 
+    Idea is to get the data and display in the main. 
+
+To DO ...
+    Card > Make a card module. 
+        Add Name
+        Add Delete button
+        Add Add priority options
+        Add Date Added

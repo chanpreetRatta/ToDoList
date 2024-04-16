@@ -3,8 +3,9 @@
 }
  :root{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --div-background-color: rgba(145, 29, 0, 0.9); 
-    --div-text-color: rgb(255,255,224); 
+    --div-background-color: rgba(244, 249, 255, 1); 
+    --div-text-color: rgb(18,22,27); 
+    --div-border-color : 1px solid rgb(0, 119, 149);
 }
 
 .container{
@@ -13,10 +14,18 @@
     grid-template-rows: 80px auto 30px;
 }
 
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-bar{
     height: 80px;
     background-color: var(--div-background-color);
     color: var(--div-text-color);
+    border: var(--div-border-color); 
     font-size: 1.5em;
     padding-left: 40px;
 
@@ -35,7 +44,7 @@
 }
 
 .input-form > input{
-    width: 60%;
+    width: 80%;
     padding: 10px;
     margin: 20px; 
 }
@@ -47,6 +56,53 @@
     border-radius: 50px;
 
 }
+
+input:focus{
+    outline: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--div-background-color); 
+    border: var(--div-border-color);
+    width: 80%;
+    height: 3em;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+.cardBody{
+    flex: 1;
+    padding: 0 .5em;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hasCompleted{
+    background-color: rgb(0, 54, 0);
+    width: 2%;
+}
+
+.hasNotCompleted{
+    background-color: white;
+    width: 2%;
+    border-right: .5px solid rgb(0, 54, 0);
+}
+
+.cardId{
+    display: none;
+}
+
+
+
+
+
+
 
 .footer{
     height: 30px;
